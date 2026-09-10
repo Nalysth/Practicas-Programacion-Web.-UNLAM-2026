@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+header{
+    text-align: center;
+    background-color: grey;
+    position: sticky;
+    top:0;
+    padding: 1%;
+    h1{
+        margin: 0;
+    }
+    a{
+        color: white;
+        text-decoration: solid;
+    }
+}
+footer{
+    text-align: center;
+    background-color: lightblue;
+    position: sticky;
+    bottom:0;
+    padding: 1%;
+    p{
+        margin: 0;
+    }
+}
+.cv{
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap: 3%;
+}
+.imagenPerfil{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.sectorPerfil{
+    padding-top: 30px;
+    text-align: center;
+}
+.informacion{
+    font-size: 20px;
+    width: 100%;
+    padding-left: 40%;
+    
+}
+.sub_lista{
+    list-style-type:circle;
+    list-style-position: inside;
+}
+ol,ul{
+    padding-left: 10%;
+}
+li{
+    font-size: 20px;
+    padding-left: 3%;
+    a{
+        color: rgb(125, 155, 129);
+    }
+}
+/*EJERCICIO 2*/
+.recetasTitulo{
+    text-align: center;
+    font-size: 30px;
+}
+.recetas{
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.receta{
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%; 
+    width: 100%;
+    padding: 3%;
+    margin: 2%;
+    background: linear-gradient(to right,rgb(231, 222, 222),rgb(185, 214, 189))
+}
+/*EJERCICIO 3 FORMULARIO*/
+.contacto{
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    
+    padding: 3%;
+    margin: 0 auto;                                                               
+    width: 100%;
+    align-self: center;
+    label{
+        display: block;
+        font-size: 20px;
+        margin-right: 10%;
+        
+    }
+    
+}
+.botones{
+    display: flex;
+    gap: 5%;
+    min-height: 50px;
+}
+#botonEnviar{
+    width: 50%;
+    color: white;
+    background: linear-gradient(to right,rgb(67, 179, 117),rgb(39, 184, 20));
+    border-style: none;
+    border-radius: 5%;
+}
+#botonCancelar{
+    width: 50%;
+    color: white;
+    background: linear-gradient(to right,rgb(252, 54, 54),rgb(250, 53, 53));
+    border-style: none;
+    border-radius: 5%;
+
+}
+

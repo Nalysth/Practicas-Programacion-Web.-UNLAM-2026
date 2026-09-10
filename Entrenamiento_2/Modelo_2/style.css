@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100vh
+}
+
+body {
+    font-size: 4em;
+    display: flex;
+    flex-direction: column;
+}
+.contenedor1, 
+.contenedor3 {
+    width: 100%;
+    flex: 1; 
+    display: flex;
+    flex-direction: row;
+}
+.contenido_1_2{
+    width: 50%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99dba2;
+    /*min-height: 15dvh;*/
+    height: 100%;  
+}
+.contenedor2{
+    display: flex;
+    flex-direction: row;
+    /*min-height: 34vh;*/
+    height: 60%;
+}
+.contenido_3_4{
+    width: 50%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eef595;
+    /*min-height: 30dvh;*/
+}
+.contenido_5, .contenido_6{
+    width: 50%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*min-height: 15dvh;*/
+    height: 100%;
+    
+}
+.contenido_5{
+    background-color: #f19b9b;
+}
+.contenido_6{
+    background-color: #75a2c7;
+}
+
+/*MOBILE*/
+@media screen and (max-width: 500px){
+}
+/* --- VISTA MOBILE (Modelo 2 con contenedor3 dominante) --- */
+
+@media screen and (max-width: 500px) {
+
+    body {
+        font-size: 4rem;
+        flex-direction: column-reverse; /* Modelo 2: ordena de abajo hacia arriba */
+    }
+
+    /* .contenedor3 toma mas altura (3 partes frente a 2 y 1) */
+    .contenedor3 {
+        flex: 3;
+        flex-direction: column-reverse;
+    }
+
+    .contenedor1 {
+        flex: 2;
+        flex-direction: column-reverse;
+    }
+
+    .contenedor2 {
+        flex: 1;
+        flex-direction: row;
+    }
+
+    /* Anchos y altos de los elementos */
+    .contenido_1_2, .contenido_5, .contenido_6 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .contenido_3_4 {
+        width: 50%; /* Mantienen la fila horizontal */
+        height: 100%;
+    }
+    .contenido_6{
+        background-color: #f19b9b;
+    }
+    .contenido_5{
+        background-color: #75a2c7;
+    }
+}

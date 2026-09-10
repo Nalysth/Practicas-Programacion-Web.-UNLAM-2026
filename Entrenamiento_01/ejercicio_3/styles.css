@@ -1,0 +1,64 @@
+/*CAMBIAR LOS ANIDAMIENTOS POR CLASES CON NOMBRES JUSTIFICADOS!!*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    text-align: center;
+    position: sticky;
+    top:0;
+    padding: 1%;
+    background-color: #9b89ff;
+    h1{
+        margin: 0;
+    }
+    /*HOME*/
+    a{
+        color: black;
+    }
+}
+.indice_recetas{
+    margin-left: 10%;
+    margin-right: 10%;
+    a{
+        text-decoration: none;
+        color: rgb(62, 133, 34);
+    }
+}
+.indice-titulo{
+    padding-left: 4%;
+}
+.indice-lista{
+    list-style-type: circle;
+    list-style-position: inside;
+}
+.indice-item{
+    padding-bottom: 0.5%;
+}
+.recetas{
+    display: grid;
+    gap: 2%;
+}
+.titulos_recetas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    h5{
+        text-align: right;   
+    }
+    a{
+        text-decoration: underline;
+        color: rgb(62, 133, 34);
+    }
+}
+.receta{
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 1px solid rgb(98, 206, 48);
+    background-color: #c9dbc9;
+    padding: 0.5%;
+    p{
+        margin:0 auto;
+        text-align: justify;
+    }
+}

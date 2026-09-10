@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang='es'>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Practica 1</title>
+        <link rel='stylesheet' href='style.css'>
+    </head>
+    <body>
+        <header>
+            <h1><a href='#recetasTitulo'>HOME</a> | <a href='#'>CONTACTO</a></h1>
+        </header>
+        <section class='cv'>
+            <article class="informacion">
+                <p>Agustina Avalos<br>23 años<br>Domicilio<br>Argentina<br>Documento: 45285677</p>
+                <h2>Experiencia laboral</h2>
+                <ul>
+                    <li>Empresa 1</li>
+                    <li>Empresa 2</li>
+                    <li>Empresa 3</li>
+                </ul>
+                <h2>Estudios</h2>
+                <ul>
+                    <li><a href="#">Universidad 1</a></li>
+                    <li class="sub_lista">Carrera 1</li>
+                    <li><a href="#">Cursos</a></li>
+                    <li class="sub_lista">Curso 1</li>
+                    <li><a href="#">Secundario</a></li>
+                    <li class="sub_lista">Colegio 1</li>
+                </ul>
+            </article>
+            <article class="sectorPerfil">
+                <img src='https://www.w3schools.com/howto/img_avatar.png' alt='Imagen de perfil' class="imagenPerfil">
+            </article>
+        </section>
+        <h2 class="recetasTitulo" id="recetasTitulo">RECETAS</h2>
+        <section class='recetas'>
+            <article class="receta">
+                <h3>RECETA 1</h3>
+                <img src='https://img.magnific.com/foto-gratis/deliciosos-rollitos-pollo-rellenos-queso-espinacas-envueltos-tiras-tocino-vista-superior_2829-17420.jpg?semt=ais_hybrid&w=740&q=80' alt='Imagen de receta 1' class="imgenRecetas">
+                <div class='listaDePasos'>
+                    <h3>Pasos</h3>
+                    <ol type='1'>
+                        <li>Paso 1</li>
+                        <li>Paso 2</li>
+                        <li>Paso 3</li>
+                        <li>Paso 4</li>
+                    </ol>
+                </div>
+            </article>
+            <article class="receta">
+                <h3>RECETA 2</h3>
+                <img src='https://img.magnific.com/foto-gratis/deliciosos-rollitos-pollo-rellenos-queso-espinacas-envueltos-tiras-tocino-vista-superior_2829-17420.jpg?semt=ais_hybrid&w=740&q=80' alt='Imagen de receta 2' class="imgenRecetas">
+                <div class='listaDePasos'>
+                    <h3>Pasos</h3>
+                    <ol type='1'>
+                        <li>Paso 1</li>
+                        <li>Paso 2</li>
+                        <li>Paso 3</li>
+                        <li>Paso 4</li>
+                    </ol>
+                </div>
+            </article>
+        </section>
+        <section class='contacto'>
+            <form action='#' method='get'>
+                <h2>CONTACTO</h2>
+                <label for='nombre'>Nombre:
+                    <input type='text' id='nombre' name='nombre' required>
+                </label>
+                <label for='email'>Email:
+                     <input type='email' id='email' name='email' required>
+                </label>
+                <label for="tel">Telefono:
+                    <input type="tel" id="telefono" name="telefono" required>
+                </label>
+                <label for='mensaje'>Mensaje:
+                    <textarea id='mensaje' name='mensaje' rows='4' cols='50' required></textarea>
+                </label>
+                <div class="botones">
+                    <input id="botonEnviar" type='submit' value='Enviar'>
+                    <input id="botonCancelar" type='button' value='Cancelar'>
+                </div>
+            </form>
+         </section>
+    </body>
+    <footer>
+        <p>TODOS LOS DERECHOS RESERVADOS</p>
+    </footer>
+</html>
