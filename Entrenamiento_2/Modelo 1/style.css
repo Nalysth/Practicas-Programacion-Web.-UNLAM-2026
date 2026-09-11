@@ -5,17 +5,24 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
-body{
-    font-size: 4em;
+html,body{
+    width: 100%;
+    height: 100vh;
+}
+body {
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column; 
 }
 .contenedor1{
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex:3;
 }
 .contenido1, .contenido2{
     width: 50%;
-    min-height: 45vh;
+    height: 100%;
     border: 1px solid black;
     display: flex;
     justify-content: center;
@@ -33,21 +40,26 @@ body{
 .contenedor2{
     display: flex;
     flex-direction: row;
-    min-height: 24vh;
+    flex:2;
 }
 /*contenido 2 y 3*/
 .conte2, .conte3{
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
 }
 /*contenedor para items 3 y 4*/
 .conte2{
     background-color: #f19b9b;
+    height: 100%;
+
 }
 /*contenedor para items 5 y 6*/
 .conte3 .contenido  {
     background-color: #75a2c7;
+    height: 100%;
+
 }
 /*ITEMS 3,4 y 5,6*/
 .contenido{
@@ -56,6 +68,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 /*VISTA MOBILE*/
 @media screen and (max-width: 500px){
