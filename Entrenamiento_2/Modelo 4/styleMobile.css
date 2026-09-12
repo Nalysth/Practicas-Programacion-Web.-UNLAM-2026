@@ -1,0 +1,34 @@
+/*MOBILE*/
+@media screen and (max-width: 500px) {
+    html, body{
+        height: 100vh;
+        width: 100%;
+    }
+    body{
+        font-size: 4rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor1{
+        flex: 4; /*separa en 4 el contenedor 1, para que tenga 4 espacios igual, le da mas espacio al "sector2"*/
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .contenedor2{
+        display: flex;
+        flex: 2;
+        flex-direction: column;
+        width: 100%;
+    }
+    .sector2{
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .item, .item2, .item5, .item6, .item3, .item4{
+        flex: 1;
+        width: 100%;
+    }
+}
