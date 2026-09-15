@@ -31,4 +31,16 @@
         flex: 1;
         width: 100%;
     }
+    .item2{
+        background-color: #CEEDCA;
+    }
+    .item4{
+        background-color: #E9EDCA;
+    }
+    .item5{
+        background-color: #afc6cc;
+    }
+    .item6{
+        background-color: #ffaeae;
+    }
 }
